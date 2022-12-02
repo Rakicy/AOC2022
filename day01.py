@@ -5,8 +5,7 @@ def get_input(file_name):
     return data
 
 def part_one(data):
-    maximum = max([sum(elf) for elf in data])
-    return maximum
+    return max([sum(elf) for elf in data])
 
 def part_two(data):
     return sum(sorted([sum(elf) for elf in data], reverse=True)[:3])
